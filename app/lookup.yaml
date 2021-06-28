@@ -1,0 +1,32 @@
+
+# Hard coded stuff so we can use a few Jenkins artifacts in place
+# of an actual backend (for now)
+
+organisations:
+
+    office-for-national-statistics:
+        label: "Office For National Statistics"
+        publisher: "https://www.gov.uk/government/organisations/office-for-national-statistics"
+        resources:
+
+            # note: arbitarary identifiers (ons1, ons3) as I need something to put inside the url to make it restful, 
+            # i.e /organisations/office-for-national-statistics/resource/<A FULL LANDING PAGE URL> .. aint gonna work
+            ons1:
+                self: "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/adhocs/008596individualcountrydatagoodsonamonthlybasisfromjanuary1998toapril2018"
+                related_datasets:
+                    ons-bop-individual-country-data:
+                        backend_resources:
+                            csvw: "https://ci.floop.org.uk/job/GSS_data/job/beta.gss-data.org.uk/job/family/job/trade/job/ONS-BOP-individual-country-data/lastSuccessfulBuild/artifact/datasets/ONS-BOP-individual-country-data/out/individual-country-data-goods-on-a-monthly-basis-from-january-1998-to-april-2018.csv-metadata.json"
+                            data: "https://ci.floop.org.uk/job/GSS_data/job/beta.gss-data.org.uk/job/family/job/trade/job/ONS-BOP-individual-country-data/lastSuccessfulBuild/artifact/datasets/ONS-BOP-individual-country-data/out/individual-country-data-goods-on-a-monthly-basis-from-january-1998-to-april-2018.csv"
+                            trig: "https://ci.floop.org.uk/job/GSS_data/job/beta.gss-data.org.uk/job/family/job/trade/job/ONS-BOP-individual-country-data/lastSuccessfulBuild/artifact/datasets/ONS-BOP-individual-country-data/out/individual-country-data-goods-on-a-monthly-basis-from-january-1998-to-april-2018.csv-metadata.trig"
+
+        
+            ons2:
+                self: "https://www.ons.gov.uk/businessindustryandtrade/internationaltrade/datasets/exportsofservicesbycountrybymodesofsupply"
+                related_datasets:
+                    ons-imports-of-services-by-country-by-modes-of-supply:
+                        backend_resources:
+                            csvw: "https://ci.floop.org.uk/job/GSS_data/job/beta.gss-data.org.uk/job/family/job/trade/job/ONS-Exports-of-services-by-country-by-modes-of-supply/5/artifact/datasets/ONS-Exports-of-services-by-country-by-modes-of-supply/out/ons-exports-of-services-by-country-by-modes-of-supply.csv-metadata.json"
+                            data: "https://ci.floop.org.uk/job/GSS_data/job/beta.gss-data.org.uk/job/family/job/trade/job/ONS-Exports-of-services-by-country-by-modes-of-supply/5/artifact/datasets/ONS-Exports-of-services-by-country-by-modes-of-supply/out/ons-exports-of-services-by-country-by-modes-of-supply.csv"
+                            trig: "https://ci.floop.org.uk/job/GSS_data/job/beta.gss-data.org.uk/job/family/job/trade/job/ONS-Exports-of-services-by-country-by-modes-of-supply/5/artifact/datasets/ONS-Exports-of-services-by-country-by-modes-of-supply/out/ons-exports-of-services-by-country-by-modes-of-supply.csv-metadata.trig"
+
