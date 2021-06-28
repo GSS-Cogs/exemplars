@@ -14,8 +14,6 @@ A restful api that I'm using to poke at what outputs closer to our future goals 
 
 Defined in `/app`.
 
-The only deployed part of this is the /api code which is deployed 
-
 To view a restful summary of csvws for a given resoure, pass a landing page i via `https://flaskapp-cr-v1-no4vxskx7a-nw.a.run.app/v1/landingpage?url=<LANDING PAGE URL>`
 
 The api root of the app can (as at 28/6/2021) be found and explored at `https://flaskapp-cr-v1-no4vxskx7a-nw.a.run.app/v1/organisations`
