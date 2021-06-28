@@ -18,7 +18,7 @@ To view a restful summary of csvws for a given resoure, pass a landing page i vi
 
 The api root of the app can (as at 28/6/2021) be found and explored at `https://flaskapp-cr-v1-no4vxskx7a-nw.a.run.app/v1/organisations`
 
-_NOTE: At time of writing it;s a stub with only two ONS landing pages present on the backend.
+_NOTE: At time of writing anything the its just a stub with only two (more or less) hard coded ONS landing pages present on the backend to fuel the api._
 
 
 ### How do I deploy?
