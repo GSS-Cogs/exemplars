@@ -3,7 +3,7 @@
 
 Early days spike around examples and examplars of what the final product we want from producers might look like.
 
-Uses a flask based web application deployed via google cloud via google [cloud Run](https://cloud.google.com/run) (TLDR: like a serverless function but its a container). The correspondinh dockerfile is in `/app/Dockerfile`.
+Uses a flask based web application deployed via google cloud via google [cloud Run](https://cloud.google.com/run) (TLDR: like a serverless function but its a container). The corresponding dockerfile is in `/app/Dockerfile`.
 
 _Note: this branch of work is very much teasing out the questions rather than the answers at the moment don't read too much into anything._
 
