@@ -5,7 +5,7 @@ from copy import deepcopy
 from flask import Flask, request, redirect
 import requests
 
-from helpers import create_dataset_response, dict_from_trig, create_resource_dict, get_url_root
+from helpers import create_dataset_response, dict_from_trig, create_resource_dict, get_url_root, new_latest_required
 from constants import RESOURCE_LOOKUP
 
 app = Flask(__name__)
@@ -175,6 +175,11 @@ def get_csvw(organisation_id: str, resource_id: str, dataset_id: str):
     Munge the csvw and trig from the latest Jenkins job into something
     more representative of the final goals of the project.
     """
+
+    if new_latest_required():
+        # TODO - this
+        pass
+
     backend_resource = create_dataset_response(organisation_id, resource_id, dataset_id)
     this_csvw = backend_resource["backend_resources"]["csvw"]
     this_trig = backend_resource["backend_resources"]["trig"]

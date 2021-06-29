@@ -12,11 +12,22 @@ namespaces = {
     "gov": "https://www.gov.uk/government/organisations/"
 }
 
+
 def get_url_root():
     """
     What it sounds like.
     """
     return request.url_root.split("v1/")[0][:-1]
+
+
+def new_latest_required(landing_page):
+    """
+    For a given landing page, use a comparisson of the previously stored Scrape to see if a new
+    transform needs to be ran.
+    """
+
+    # TODO - this
+    return False
 
 
 def create_resource_dict(organisation_id: str, resource_id: str):
