@@ -32,7 +32,7 @@ Build Docker on your local machine
 Login via googl sdk
 `gcloud auth login`
 
-Congigure gcloud docker access (if you've never done it before)
+Configure gcloud docker access (if you've never done it before)
 `gcloud auth configure-docker`
 
 Push the Docker image to google Container Registry 
